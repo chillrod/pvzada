@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        #root {
+            display: grid;
+            place-items: center;
+            background: #548f6f;
+            height: 100vh;
+
+        }
+
+        button {
+            padding: 1em;
+            background: red;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 200px;
+            order: 0;
+        }
+
+        .visible {
+            display: block;
+            order: -1;
+        }
+        .visible-text {
+            display: block;
+            order: -2;
+            width: 600px;
+        }
+
+        .notVisible {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="/app.js"></script>
+</body>
+</html>
